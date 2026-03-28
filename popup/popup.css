@@ -1,0 +1,132 @@
+/**
+ * ================================
+ * GLOBAL RESET + BASE STYLES
+ * ================================
+ * Ensures consistent sizing behavior across all elements.
+ */
+* {
+  box-sizing: border-box; /* 🔥 FIX: prevents overflow issues */
+}
+
+body {
+  margin: 0;
+  background: #05070c;
+  font-family: Inter, system-ui;
+  color: white;
+  width: 360px;
+}
+
+/**
+ * Main container padding
+ */
+.container {
+  padding: 16px;
+}
+
+/**
+ * ================================
+ * HEADER
+ * ================================
+ */
+.header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+/**
+ * ================================
+ * SECTION CARD
+ * ================================
+ * Used for grouping inputs and saved links
+ */
+.section {
+  background: #0c0f17;
+  border: 1px solid #1f2430;
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+/**
+ * ================================
+ * INPUT FIELDS
+ * ================================
+ * Full width inputs with consistent spacing
+ */
+input {
+  width: 100%;
+  padding: 9px;
+  margin-bottom: 8px;
+  background: #12151d;
+  border: 1px solid #2a2f3a;
+  border-radius: 8px;
+  color: white;
+}
+
+/**
+ * ================================
+ * PRIMARY BUTTON
+ * ================================
+ */
+#addBtn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #9333ea, #d946ef);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+#addBtn:hover {
+  opacity: 0.9;
+}
+
+/**
+ * ================================
+ * LINK ROW (Saved Links)
+ * ================================
+ */
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #12151d;
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+/**
+ * ================================
+ * ACTION BUTTONS (Copy / Insert)
+ * ================================
+ */
+.actions button {
+  margin-left: 6px;
+  background: none;
+  border: none;
+  color: #9aa3b2;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.actions button:hover {
+  color: #d946ef;
+}
+
+/**
+ * ================================
+ * SECTION TITLE
+ * ================================
+ */
+.section-title {
+  font-size: 12px;
+  color: #9aa3b2;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
