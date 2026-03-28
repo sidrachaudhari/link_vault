@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    ================================
+    META CONFIGURATION
+    ================================
+    Ensures proper rendering + scaling
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- 
+      ================================
+      APP HEADER
+      ================================
+    -->
+    <div class="header">LINK VAULT</div>
+
+    <!-- 
+      ================================
+      ADD LINK SECTION
+      ================================
+      Allows user to input and save links
+    -->
+    <div class="section">
+      
+      <!-- Name input -->
+      <input 
+        id="name" 
+        placeholder="Name (e.g. GitHub)" 
+        autocomplete="off"
+      />
+
+      <!-- URL input -->
+      <input 
+        id="url" 
+        placeholder="https://..." 
+        autocomplete="off"
+      />
+
+      <!-- Add button -->
+      <button id="addBtn">Add Link</button>
+    </div>
+
+    <!-- 
+      ================================
+      SAVED LINKS SECTION
+      ================================
+      Dynamically populated via popup.js
+    -->
+    <div class="section">
+
+      <!-- Section Title -->
+      <div class="section-title">Saved Links</div>
+
+      <!-- Dynamic link list -->
+      <div id="links"></div>
+
+    </div>
+
+  </div>
+
+  <!-- 
+    ================================
+    SCRIPT ENTRY POINT
+    ================================
+    Handles all UI logic and interactions
+  -->
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
